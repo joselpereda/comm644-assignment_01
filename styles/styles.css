@@ -64,6 +64,6 @@ footer {
 	background:		url('../images/footer.gif') no-repeat;
 	clear:			both;
 }
-h1 {
-	bor
+.selected {
+	color: red;
 }
