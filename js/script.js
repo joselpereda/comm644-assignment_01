@@ -40,7 +40,9 @@ $(function() {
 // 13. Programmatically remove the vprospect, vconvert, and vretain classes from the <p> tags in the main <section> tag
     $('section p').removeClass('vprospect vconvert vretain');
 
-// 14.Programmatically add the text “Chevy Dealers Association” after the word “President” in the client testimonials section. Make sure to programmatically add a line break after the word “President” so that the new text you’re adding is placed directly underneath
+// 14. Programmatically add the text “Chevy Dealers Association” after the word “President” in the client testimonials section. Make sure to programmatically add a line break after the word “President” so that the new text you’re adding is placed directly underneath
+    $('aside p:last-of-type').append('<br>Chevy Dealers Association');
 
-
+// 15. Programmatically wrap the testimonial verbiage with a <q> tag.
+    $('aside p:first-of-type').wrapInner('<q></q>');
 });
