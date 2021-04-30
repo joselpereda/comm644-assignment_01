@@ -15,6 +15,7 @@ $(function() {
     $('section h2').css({"border-top-right-radius": "5px", "border-bottom-left-radius": "5px"});
     $('aside h2').css({"border-top-right-radius": "5px", "border-bottom-left-radius": "5px"});
 
-
+// 7. Select the <h2> elements within the <section> and <aside> tags and apply a background color of #DFE3E6
+    $('section h2').css({"background-color});
 
 });
