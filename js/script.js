@@ -1,4 +1,5 @@
 $(function() {
+// MODIFY THE HEADINGS
 // 3. Select the <h2> elements within the <section> and <aside> tags and apply a CSS solid, black, 1px border to them
     $('section h2').css({"display":"inline-block", "border":"1px solid black"});
     $('aside h2').css({"display":"inline-block", "border":"1px solid black"});
@@ -16,6 +17,10 @@ $(function() {
     $('aside h2').css({"border-top-right-radius": "5px", "border-bottom-left-radius": "5px"});
 
 // 7. Select the <h2> elements within the <section> and <aside> tags and apply a background color of #DFE3E6
-    $('section h2').css({"background-color});
+    $('section h2').css({"background-color": "#DFE3E6"});
+    $('aside h2').css({"background-color": "#DFE3E6"});
+
+// MODIFY THE NAVIGATION MENU
+// 
 
 });
