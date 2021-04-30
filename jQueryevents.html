@@ -68,6 +68,25 @@
         //     });
         // });
 
+        //22. Create a link within the web page and set it’s href attribute to browse to modulemedia.com. When the user clicks the link, first, prevent it from redirecting to that web site. Second, programmatically style the link so that its color changes to red. Third, display the name of the node that triggered the event within an alert box.
+        // $(function() {
+        //     // PREVENT RE-DIRECTION
+        //     $('a').click(function(event){
+        //         event.preventDefault();
+        //         //do whatever
+        //     });
+
+        //     // CHANGE LINKE COLOR TO RED
+        //     $('a').hover(function(){
+        //         $('a').css('color','red');
+        //     }); 
+
+        //     // DISPLAY NAME OF THE NODE THA TRIGGERED THE EVEN WITHIN THE ALRET BOX
+        //     $(document).click(function(event){
+        //         alert("You've clicked: " + event.target.nodeName + ", id: " + event.target.id);
+        //     });
+        // });
+
     </script>
 </head>
 <body>
@@ -75,6 +94,8 @@
     <button id="myButton2">Click Me Too</button>
     <br><br>
     <div style="width:50%;height:200px;background-color:silver;"><span></span></div>
+    <br><br>
+    <a href="modulemedia.com">ModuleMedia.com is for sale!</a>
     
 </body>
 </html>
