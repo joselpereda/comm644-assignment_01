@@ -5,19 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice with jQuery Events</title>
+    <link href="styles/normalize.css" type="text/css" rel="stylesheet">
     <script src="js/jquery-3.6.0.js"></script>
     <script>
-        $(function() {
-            $("body").on("click", "button", function(event) {
-                window.alert( "Hello." );
-            });
+        //16.Create a button on a web page. Use the .click() method to display an alert message to the user indicating that the button has been clicked when the button is actually clicked. 
+        // $(function() {
+        //     $('#myButton1').click(function () {
+        //         window.alert("Button has been clicked!");
+        //     });
+        // });
 
+        //17.Create a button on a web page. Attach the click event using the .bind() method to display an alert message to the user indicating that the button has been clicked when the button is actually clicked. 
+        // $(function() {
+        //     $('#myButton1').bind('click', function () {
+        //         window.alert("Button has been clicked!");
+        //     });
+        // });
 
-        });
+        //18. Create a button on a web page. Attach the click event using the .on() method to display an alert message to the user indicating that the button has been clicked when the button is actually clicked. 
+        // $(function() {
+        //     $('#myButton1').on('click', function () {
+        //         window.alert("Button has been clicked!");
+        //     });
+        // });
+
+        //19.Create two buttons on a web page. Attach the click event to both buttons using a single handler using the .on() method. Again, an alert message should be displayed to the user indicating that a button has been clicked when either of the buttons are actually clicked. 
+        // $(function() {
+        //     $('body').on('click', 'button', function () {
+        //         window.alert("Button has been clicked!");
+        //     });
+        // });
+
+        //20. Create a div on a web page. Use jQuery to set the div element to 400px wide and 400px high. Attach the click, mouseenter, and mouseleave events using the .on() method. Display an alert message to the user indicating that the div was either clicked on, the mouse entered it, or the mouse left it. 
+        // $(function() {
+        //     $("div").width("400px").height("400px");
+
+        //     $("div").on({
+        //         mouseenter: function() {
+        //             window.alert("Hovered over the div!");
+        //         },
+        //     	mouseleave: function() {
+        //             window.alert("The mouse left the div!");
+        //         },
+        //         click: function() {window.alert("You clicked on the div!");
+        //         }
+        //     });
+        // });
+
+        //21. Rewrite the code from number 5 (20?). This time add a span tag to the web page. Display three different messages within the span tag when the user enters the div, leaves the div, or clicks on the div
+        // $(function() {
+        //     $("div").width("400px").height("400px");
+
+        //     $("div").on({
+        //         mouseenter: function() {
+        //             $('span').empty().append("Hovered over the div!");
+        //         },
+        //     	mouseleave: function() {
+        //             $('span').empty().append("The mouse left the div!");
+        //         },
+        //         click: function() {$('span').empty().append("You clicked on the div!");
+        //         }
+        //     });
+        // });
+
     </script>
 </head>
 <body>
-    <input type="button" name="button" value="Click me button"/>
+    <button id="myButton1">Click Me</button> 
+    <button id="myButton2">Click Me Too</button>
+    <br><br>
+    <div style="width:50%;height:200px;background-color:silver;"><span></span></div>
     
 </body>
 </html>
